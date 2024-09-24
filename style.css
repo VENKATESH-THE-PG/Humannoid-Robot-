@@ -29,6 +29,13 @@ h2 {
     color: #007bff;
 }
 
+.robot-img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 10px auto;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
