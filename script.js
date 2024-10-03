@@ -1,8 +1,11 @@
-// Smooth Scroll for Learn More Button
-document.querySelector('.learn-more').addEventListener('click', function(event) {
-    event.preventDefault();
-    document.querySelector('#about').scrollIntoView({
-        behavior: 'smooth'
+// Smooth Scroll for Sidebar Navigation and Learn More Button
+document.querySelectorAll('.sidebar a, .learn-more').forEach(anchor => {
+    anchor.addEventListener('click', function(event) {
+        event.preventDefault();
+        const targetId = this.getAttribute('href');
+        document.querySelector(targetId).scrollIntoView({
+            behavior: 'smooth'
+        });
     });
 });
 
