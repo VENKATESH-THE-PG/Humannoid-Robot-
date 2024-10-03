@@ -83,13 +83,27 @@ ul li {
     margin-bottom: 10px;
 }
 
-/* Contact Section */
-#contact p a {
-    color: #007bff;
+/* Back to Top Button */
+#backToTop {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100; /* Sit on top */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-#contact p a:hover {
-    text-decoration: underline;
+#backToTop:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
 }
 
 /* Footer */
